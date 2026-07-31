@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Ra-Physics",
+    "slug": "ra-physics",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icons/adaptive-icon.png",
+    "scheme": "ra-physics",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "icon": {
+        "dark": "./src/assets/icons/ios-dark.png",
+        "light": "./src/assets/icons/ios-light.png"
+      },
+      "bundleIdentifier": "com.tofaal9152.ra-physics"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./src/assets/icons/adaptive-icon.png",
+        "monochromeImage": "./src/assets/icons/adaptive-icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.tofaal9152.raphysics"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./src/assets/icons/adaptive-icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "@react-native-community/datetimepicker",
+      "expo-font",
+      "expo-sharing",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/assets/icons/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "image": "./src/assets/icons/splash-icon.png",
+            "backgroundColor": "#ffffff"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

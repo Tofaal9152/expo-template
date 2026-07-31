@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"e:\\\\CSE\\\\template\\\\claude expo template\" -Recurse -File)",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "PowerShell(Get-ChildItem -Path \"e:\\\\CSE\\\\template\\\\claude expo template\\\\src\" -Recurse -File | Select-Object -ExpandProperty FullName | ForEach-Object { $_.Replace\\(\"e:\\\\CSE\\\\template\\\\claude expo template\\\\\", \"\"\\) })",
+      "PowerShell(Set-Location \"e:\\\\CSE\\\\template\\\\claude expo template\"; $tsPath = \".\\\\node_modules\\\\.bin\\\\tsc.cmd\"; if \\(Test-Path $tsPath\\) { & $tsPath --noEmit 2>&1 | Select-Object -First 120 } else { Write-Output \"tsc not found at $tsPath\" })",
+      "PowerShell(Set-Location \"e:\\\\CSE\\\\template\\\\claude expo template\"; Get-ChildItem node_modules\\\\.bin | Where-Object { $_.Name -match \"^tsc\" } | Select-Object Name, FullName | Format-Table -AutoSize)"
+    ]
+  }
+}
